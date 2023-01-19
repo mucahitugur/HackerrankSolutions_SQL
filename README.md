@@ -1,2 +1,2 @@
 # HackerrankSolutions
-This repo consists HackerRank SQL questions
+This repo consists HackerRank SQL questions and solutions
