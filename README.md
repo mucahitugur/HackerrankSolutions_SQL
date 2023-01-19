@@ -1,4 +1,6 @@
-# HackerrankSolutions
+# HackerRank_Challenges Solutions
+
+This SQL script is solution of following questions:
 
 Julia asked her students to create some coding challenges. Write a query to print the hacker_id, name, and the total number of challenges created by each student. Sort your results by the total number of challenges in descending order. If more than one student created the same number of challenges, then sort the result by hacker_id. If more than one student created the same number of challenges and the count is less than the maximum number of challenges created, then exclude those students from the result.
 
@@ -19,4 +21,13 @@ Challenges: The challenge_id is the id of the challenge, and hacker_id is the id
 
 Sample Input 0
 
-Hackers Table:  Challenges Table: 
+Hackers Table:  
+
+
+![image](https://user-images.githubusercontent.com/54595971/213464382-21ccc232-3b58-4867-b5bd-53ef07af2379.png)
+
+
+Challenges Table: 
+
+![image](https://user-images.githubusercontent.com/54595971/213464411-62625083-e733-430b-bf7a-7ba831c33fc5.png)
+
