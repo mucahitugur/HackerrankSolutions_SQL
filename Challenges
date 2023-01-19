@@ -1,0 +1,16 @@
+select hc.hacker_id,hc.name, b. sayi from hackers hc 
+    left join ( select count(ch.challenge_id) as sayi,ch.hacker_id from challenges ch group by ch.hacker_id) b 
+        on hc.hacker_id=b.hacker_id 
+    LEFT JOIN ( 
+        SELECT sayi , count(sayi) AS CntSayi
+        from (select count(ch.challenge_id) as sayi,ch.hacker_id from challenges ch group by ch.hacker_id ) d 
+        GROUP BY sayi
+    ) c 
+        ON c.sayi = b.sayi 
+        left join (
+            select max(sayi) as maks from (select count(ch.challenge_id) as sayi,ch.hacker_id from challenges ch group by ch.hacker_id )t 
+            ) f
+            on 1=1
+            where c.cntSayi=1 or b.sayi=f.maks
+    order by b.sayi desc,hc.hacker_id asc 
+        
