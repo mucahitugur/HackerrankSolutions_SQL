@@ -7,10 +7,15 @@ Input Format
 The following tables contain challenge data:
 
 Hackers: The hacker_id is the id of the hacker, and name is the name of the hacker. 
+
 ![image](https://user-images.githubusercontent.com/54595971/213463952-5f8d01c0-c0ed-48bd-8817-ce024cff254c.png)
 
 
 Challenges: The challenge_id is the id of the challenge, and hacker_id is the id of the student who created the challenge. 
+
+
+![image](https://user-images.githubusercontent.com/54595971/213464099-8e4169f5-4d33-4744-98d7-9bc5f346944b.png)
+
 
 Sample Input 0
 
