@@ -1,4 +1,5 @@
 select hc.hacker_id, hc.name, sum(b.skor) as totalscore 
 from hackers hc left join( select sb.hacker_id, sb.challenge_id, max(score) as skor 
-                          from submissions sb group by sb.hacker_id,sb.challenge_id) b on
-                          hc.hacker_id=b.hacker_id   group by hc.hacker_id,hc.name having totalscore > 0 order by totalscore desc,hc.hacker_id asc
+ from submissions sb group by sb.hacker_id,sb.challenge_id) b on
+  hc.hacker_id=b.hacker_id   group by hc.hacker_id,hc.name
+  having totalscore > 0 order by totalscore desc,hc.hacker_id asc
